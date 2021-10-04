@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/azn-l/AndroidStudioProjects/climate_history/app/src/main/res/layout/activity_arctic_sea_ice_minimum.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/azn-l/AndroidStudioProjects/climate_history/app/src/main/res/layout/activity_carbon_dioxide.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/azn-l/AndroidStudioProjects/climate_history/app/src/main/res/layout/activity_global_temperature.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/azn-l/AndroidStudioProjects/climate_history/app/src/main/res/layout/activity_ice_sheets.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/azn-l/AndroidStudioProjects/climate_history/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/azn-l/AndroidStudioProjects/climate_history/app/src/main/res/layout/activity_ocean_heat_content.xml" value="0.264" />
+        <entry key="..\:/Users/azn-l/AndroidStudioProjects/climate_history/app/src/main/res/layout/activity_sea_level.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

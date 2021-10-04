@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Climate History</string>
+    <string name="co2_button_text">Carbon Dioxide</string>
+    <string name="gt_button_text">Global Temperature</string>
+    <string name="asim_button_text">Arctic Sea Ice Minimum</string>
+    <string name="is_button_text">Ice Sheets</string>
+    <string name="sl_button_text">Sea Level</string>
+    <string name="ohc_button_text">Ocean Heat Content</string>
+    <string name="back_button_text">Back</string>
+</resources>
