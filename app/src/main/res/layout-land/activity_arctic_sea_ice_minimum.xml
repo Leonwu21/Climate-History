@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ArcticSeaIceMinimum"
+    android:orientation="horizontal">
+
+    <com.anychart.AnyChartView
+        android:id="@+id/asim_graph"
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:background="#F4892F"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/asim_description"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="#39C7FC"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="DESCRIPTION" />
+
+        <Button
+            android:id="@+id/asim_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onBackClick"
+            android:text="@string/back_button_text"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</LinearLayout>
