@@ -1,47 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GlobalTemperature">
+    tools:context=".GlobalTemperature"
+    android:orientation="vertical">
 
     <com.anychart.AnyChartView
-        android:id="@+id/any_chart_view"
-        android:layout_width="265dp"
-        android:layout_height="186dp"
+        android:id="@+id/gt_graph"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
         android:background="#F4892F"
-        android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.194" />
+        android:gravity="center" />
 
     <TextView
-        android:id="@+id/textView6"
-        android:layout_width="265dp"
-        android:layout_height="186dp"
+        android:id="@+id/gt_description"
+        android:layout_width="386dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="23dp"
         android:background="#F4892F"
         android:gravity="center"
-        android:text="DESCRIPTION"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.666" />
+        android:layout_gravity="center"
+        android:text="DESCRIPTION" />
 
     <Button
-        android:id="@+id/back_button3"
+        android:id="@+id/gt_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onBackClick"
         android:text="@string/back_button_text"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.882" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false" />
+</LinearLayout>
