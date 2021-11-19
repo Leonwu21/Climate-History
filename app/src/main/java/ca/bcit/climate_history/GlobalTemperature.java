@@ -27,16 +27,15 @@ import java.util.List;
 public class GlobalTemperature extends AppCompatActivity {
 
     /**
-     * Reads in file, parses the information, and returns it in a list of DataEntry objects
+     * Reads in file, parses the information, and stores it in a list of DataEntry objects
      * @param filename name of text file to read
      * @param data list of DataEntry objects
-     * @return list of DataEntry objects
-     * @throws IOException
+     * @throws IOException if file not found
      */
-    public List<DataEntry> readFile(String filename, List<DataEntry> data) throws IOException {
-        ArrayList<Double> avg = new ArrayList<Double>();
-        ArrayList<Double> lowess = new ArrayList<Double>();
-        ArrayList<String> years = new ArrayList<String>();
+    public void readFile(String filename, List<DataEntry> data) throws IOException {
+        ArrayList<Double> avg = new ArrayList<>();
+        ArrayList<Double> lowess = new ArrayList<>();
+        ArrayList<String> years = new ArrayList<>();
 
         InputStream is = null;
         try {
@@ -45,7 +44,7 @@ public class GlobalTemperature extends AppCompatActivity {
             e.printStackTrace();
         }
         BufferedReader reader = new BufferedReader(new InputStreamReader(is));
-        String line = "";
+        String line;
         while ((line = reader.readLine()) != null) {
             String [] nums = line.split(";");
             years.add(nums[0]);
@@ -55,13 +54,9 @@ public class GlobalTemperature extends AppCompatActivity {
         for (int i = 0; i < avg.size(); i++) {
             data.add(new CustomDataEntry(years.get(i), avg.get(i), lowess.get(i)));
         }
-        return data;
     }
 
-    /**
-     * Creates the line graph (AnyChart) upon Activity construction.
-     * @param savedInstanceState
-     */
+    // Creates the line graph (AnyChart) upon Activity construction.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -126,7 +121,7 @@ public class GlobalTemperature extends AppCompatActivity {
     }
 
     // Custom DataEntry object for graph
-    private class CustomDataEntry extends ValueDataEntry {
+    private static class CustomDataEntry extends ValueDataEntry {
 
         CustomDataEntry(String x, Number value, Number value2) {
             super(x, value);
