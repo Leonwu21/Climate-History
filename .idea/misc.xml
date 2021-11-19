@@ -4,11 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/azn-l/AndroidStudioProjects/Climate-History/app/src/main/res/layout-land/activity_global_temperature.xml" value="0.22522522522522523" />
+        <entry key="..\:/Users/azn-l/AndroidStudioProjects/Climate-History/app/src/main/res/layout-land/activity_ocean_heat_content.xml" value="0.22522522522522523" />
         <entry key="..\:/Users/azn-l/AndroidStudioProjects/Climate-History/app/src/main/res/layout/activity_arctic_sea_ice_minimum.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/azn-l/AndroidStudioProjects/Climate-History/app/src/main/res/layout/activity_carbon_dioxide.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/azn-l/AndroidStudioProjects/Climate-History/app/src/main/res/layout/activity_global_temperature.xml" value="0.2" />
         <entry key="..\:/Users/azn-l/AndroidStudioProjects/Climate-History/app/src/main/res/layout/activity_ice_sheets.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/azn-l/AndroidStudioProjects/Climate-History/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/azn-l/AndroidStudioProjects/Climate-History/app/src/main/res/layout/activity_ocean_heat_content.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/azn-l/AndroidStudioProjects/climate_history/app/src/main/res/layout/activity_arctic_sea_ice_minimum.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/azn-l/AndroidStudioProjects/climate_history/app/src/main/res/layout/activity_carbon_dioxide.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/azn-l/AndroidStudioProjects/climate_history/app/src/main/res/layout/activity_global_temperature.xml" value="0.25416666666666665" />
