@@ -81,7 +81,7 @@ public class ArcticSeaIceMinimum extends AppCompatActivity {
 
         List<DataEntry> seriesData = new ArrayList<>();
         try {
-            readFile("ArcticSeaIceExtent.txt", seriesData);
+            readFile("ArcticSeaIceMinimum.txt", seriesData);
         } catch (IOException e) {
             e.printStackTrace();
         }
