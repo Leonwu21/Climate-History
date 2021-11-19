@@ -102,6 +102,7 @@ public class CarbonDioxide extends AppCompatActivity {
 
         Line series2 = cartesian.line(series2Mapping);
         series2.name("Interpolated");
+        series2.stroke("2 red");
         series2.hovered().markers().enabled(true);
         series2.hovered().markers()
                 .type(MarkerType.CIRCLE)
