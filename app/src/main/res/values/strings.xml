@@ -7,4 +7,23 @@
     <string name="sl_button_text">Sea Level</string>
     <string name="ohc_button_text">Ocean Heat Content</string>
     <string name="back_button_text">Back</string>
+
+    <string name="carbonDioxide">Carbon Dioxide</string>
+    <string name="globalTemperature">Global Temperature</string>
+    <string name="arcticSeaIce">Arctic Sea Ice Minimum</string>
+    <string name="iceSheets">Ice Sheets</string>
+    <string name="seaLevel">Sea Level</string>
+    <string name="oceanHeatContent">Ocean Heat Content</string>
+    <!-- menu items -->
+    <string name="nav_carbonDioxide">Carbon Dioxide</string>
+    <string name="nav_globalTemperature">Global Temperature</string>
+    <string name="nav_arcticSeaIce">Arctic Sea Ice Minimum</string>
+    <string name="nav_iceSheets">Ice Sheets</string>
+    <string name="nav_seaLevel">Sea Level</string>
+    <string name="nav_oceanHeatContent">Ocean Heat Content</string>
+    <string name="nav_open_drawer">Open Navigation drawer</string>
+    <string name="nav_close_drawer">Close navigation drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
