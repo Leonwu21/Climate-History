@@ -63,7 +63,9 @@ public class SeaLevelFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        AnyChartView anyChartView = getView().findViewById(R.id.sl_graph);
+
+        View rootView = inflater.inflate(R.layout.fragment_sea_level, container, false);
+        AnyChartView anyChartView = (AnyChartView) rootView.findViewById(R.id.sl_graph);
 
         Cartesian cartesian = AnyChart.line();
         cartesian.animation(true);
@@ -121,7 +123,7 @@ public class SeaLevelFragment extends Fragment {
 
         anyChartView.setChart(cartesian);
 
-        return inflater.inflate(R.layout.fragment_sea_level, container, false);
+        return rootView;
     }
 
     // Custom DataEntry object for graph

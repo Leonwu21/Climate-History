@@ -1,21 +1,13 @@
 <resources>
-    <string name="app_name">Climate History</string>
-    <string name="co2_button_text">Carbon Dioxide</string>
-    <string name="gt_button_text">Global Temperature</string>
-    <string name="asim_button_text">Arctic Sea Ice Minimum</string>
-    <string name="is_button_text">Ice Sheets</string>
-    <string name="sl_button_text">Sea Level</string>
-    <string name="ohc_button_text">Ocean Heat Content</string>
-    <string name="back_button_text">Back</string>
-
     <string name="carbonDioxide">Carbon Dioxide</string>
     <string name="globalTemperature">Global Temperature</string>
     <string name="arcticSeaIce">Arctic Sea Ice Minimum</string>
     <string name="iceSheets">Ice Sheets</string>
     <string name="seaLevel">Sea Level</string>
     <string name="oceanHeatContent">Ocean Heat Content</string>
+
     <!-- menu items -->
-    <string name="nav_main">Main Page</string>
+    <string name="nav_main">Homepage</string>
     <string name="nav_carbonDioxide">Carbon Dioxide</string>
     <string name="nav_globalTemperature">Global Temperature</string>
     <string name="nav_arcticSeaIce">Arctic Sea Ice Minimum</string>
@@ -24,7 +16,4 @@
     <string name="nav_oceanHeatContent">Ocean Heat Content</string>
     <string name="nav_open_drawer">Open navigation drawer</string>
     <string name="nav_close_drawer">Close navigation drawer</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-
 </resources>

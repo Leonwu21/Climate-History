@@ -72,7 +72,9 @@ public class OceanHeatContentFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        AnyChartView anyChartView = getView().findViewById(R.id.ohc_graph);
+
+        View rootView = inflater.inflate(R.layout.fragment_ocean_heat_content, container, false);
+        AnyChartView anyChartView = (AnyChartView) rootView.findViewById(R.id.ohc_graph);
 
         Cartesian cartesian = AnyChart.line();
         cartesian.animation(true);
@@ -194,7 +196,7 @@ public class OceanHeatContentFragment extends Fragment {
 
         anyChartView.setChart(cartesian);
 
-        return inflater.inflate(R.layout.fragment_ocean_heat_content, container, false);
+        return rootView;
     }
 
     // Custom DataEntry object for graph
