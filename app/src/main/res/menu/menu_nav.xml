@@ -1,4 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
+    <group
+        android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_main"
+            android:title="@string/nav_main"
+            android:checked="true" />
+        <item
+            android:id="@+id/nav_carbonDioxide"
+            android:title="@string/nav_carbonDioxide" />
+        <item
+            android:id="@+id/nav_globalTemperature"
+            android:title="@string/nav_globalTemperature" />
+        <item
+            android:id="@+id/nav_arcticSeaIce"
+            android:title="@string/nav_arcticSeaIce" />
+        <item
+            android:id="@+id/nav_iceSheets"
+            android:title="@string/nav_iceSheets" />
+        <item
+            android:id="@+id/nav_seaLevel"
+            android:title="@string/nav_seaLevel" />
+        <item
+            android:id="@+id/nav_oceanHeatContent"
+            android:title="@string/nav_oceanHeatContent" />
+    </group>
 </menu>

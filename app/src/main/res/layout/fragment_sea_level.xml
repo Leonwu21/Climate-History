@@ -1,14 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SeaLevelFragment">
+    tools:context=".SeaLevelFragment"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <com.anychart.AnyChartView
+        android:id="@+id/sl_graph"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="350dp"
+        android:background="#F4892F"
+        android:gravity="center" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/sl_description"
+        android:layout_width="386dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="23dp"
+        android:background="#84E88D"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="DESCRIPTION" />
+
+    <Button
+        android:id="@+id/sl_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onBackClick"
+        android:text="@string/back_button_text"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false" />
+</LinearLayout>
