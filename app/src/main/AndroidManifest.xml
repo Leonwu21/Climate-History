@@ -7,7 +7,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         tools:replace="android:label"
-        android:label="Climate History"
+        android:label="Earth's Climate History"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Climate_history">

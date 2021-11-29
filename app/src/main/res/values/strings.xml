@@ -5,7 +5,12 @@
     <string name="arcticSeaIce">Arctic Sea Ice Minimum</string>
     <string name="iceSheets">Ice Sheets</string>
     <string name="seaLevel">Sea Level</string>
+
+    <!-- main items -->
     <string name="oceanHeatContent">Ocean Heat Content</string>
+    <string name="main_blurb">Earth\'s climate has changed throughout history. Just in the last 650,000 years there have been seven cycles of glacial advance and retreat, with the abrupt end of the last ice age about 11,700 years ago marking the beginning of the modern climate era — and of human civilization. Most of these climate changes are attributed to very small variations in Earth’s orbit that change the amount of solar energy our planet receives.</string>
+    <string name="main_brief">In Brief:</string>
+    <string name="main_summary">Direct observations made on and above Earth’s surface show the planet’s climate is significantly changing. Human activities are the primary driver of those changes.</string>
 
     <!-- menu items -->
     <string name="nav_main">Homepage</string>

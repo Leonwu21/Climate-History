@@ -38,4 +38,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     implementation 'com.github.AnyChart:AnyChart-Android:1.1.2'
     implementation 'com.google.android.material:material:1. 5.0-alpha05'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.17'
 }
