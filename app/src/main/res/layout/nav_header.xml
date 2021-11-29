@@ -8,7 +8,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleType="centerCrop"
-        android:src="@drawable/chit_chat"
+        android:src="@drawable/climate_history_menu"
         />
     <LinearLayout
         android:layout_width="wrap_content"

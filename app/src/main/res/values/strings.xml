@@ -1,4 +1,5 @@
 <resources>
+    <string name="appName">Climate History</string>
     <string name="carbonDioxide">Carbon Dioxide</string>
     <string name="globalTemperature">Global Temperature</string>
     <string name="arcticSeaIce">Arctic Sea Ice Minimum</string>

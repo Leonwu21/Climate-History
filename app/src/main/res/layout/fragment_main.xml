@@ -7,13 +7,51 @@
     android:layout_height="match_parent" >
 
     <LinearLayout
+        android:id="@+id/content_frame"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical" >
-        <FrameLayout
-            android:id="@+id/content_frame"
+        <ImageView
+            android:id="@+id/climate_history_main"
+            android:layout_width="wrap_content"
+            android:layout_height="283dp"
+            app:srcCompat="@drawable/climate_history_main" />
+
+        <TextView
+            android:id="@+id/main_blurb"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.5"
+            android:paddingLeft="6dp"
+            android:text="Earth's climate has changed throughout history. Just in the last 650,000 years there have been seven cycles of glacial advance and retreat, with the abrupt end of the last ice age about 11,700 years ago marking the beginning of the modern climate era — and of human civilization. Most of these climate changes are attributed to very small variations in Earth’s orbit that change the amount of solar energy our planet receives."
+            android:textAlignment="gravity"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/main_brief"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.5"
+            android:paddingLeft="6dp"
+            android:paddingTop="20dp"
+            android:text="In Brief:"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/main_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.5"
+            android:paddingLeft="6dp"
+            android:paddingTop="10dp"
+            android:text="Direct observations made on and above Earth’s surface show the planet’s climate is significantly changing. Human activities are the primary driver of those changes."
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="14sp" />
     </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView
