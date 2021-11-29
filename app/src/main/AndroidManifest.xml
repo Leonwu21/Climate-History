@@ -1,38 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="ca.bcit.climate_history">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        tools:replace="android:label"
+        android:label="Earth's Climate History"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Climate_history">
-        <activity
-            android:name=".OceanHeatContent"
-            android:exported="true"
-            android:label="Ocean Heat Content"/>
-        <activity
-            android:name=".SeaLevel"
-            android:exported="true"
-            android:label="Sea Level"/>
-        <activity
-            android:name=".IceSheets"
-            android:exported="true"
-            android:label="Ice Sheets" />
-        <activity
-            android:name=".ArcticSeaIceMinimum"
-            android:exported="true"
-            android:label="Arctic Sea Ice Minimum" />
-        <activity
-            android:name=".GlobalTemperature"
-            android:exported="true"
-            android:label="Global Temperature" />
-        <activity
-            android:name=".CarbonDioxide"
-            android:exported="true"
-            android:label="Carbon Dioxide" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

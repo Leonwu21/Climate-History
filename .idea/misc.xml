@@ -3,11 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/azn-l/AndroidStudioProjects/Climate-History/app/src/main/res/layout-land/activity_arctic_sea_ice_minimum.xml" value="0.22522522522522523" />
+        <entry key="..\:/Users/azn-l/AndroidStudioProjects/Climate-History/app/src/main/res/layout-land/activity_carbon_dioxide.xml" value="0.22522522522522523" />
+        <entry key="..\:/Users/azn-l/AndroidStudioProjects/Climate-History/app/src/main/res/layout-land/activity_global_temperature.xml" value="0.22522522522522523" />
+        <entry key="..\:/Users/azn-l/AndroidStudioProjects/Climate-History/app/src/main/res/layout-land/activity_ice_sheets.xml" value="0.22522522522522523" />
+        <entry key="..\:/Users/azn-l/AndroidStudioProjects/Climate-History/app/src/main/res/layout-land/activity_ocean_heat_content.xml" value="0.22522522522522523" />
+        <entry key="..\:/Users/azn-l/AndroidStudioProjects/Climate-History/app/src/main/res/layout-land/activity_sea_level.xml" value="0.22522522522522523" />
         <entry key="..\:/Users/azn-l/AndroidStudioProjects/Climate-History/app/src/main/res/layout/activity_arctic_sea_ice_minimum.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/azn-l/AndroidStudioProjects/Climate-History/app/src/main/res/layout/activity_carbon_dioxide.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/azn-l/AndroidStudioProjects/Climate-History/app/src/main/res/layout/activity_global_temperature.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/azn-l/AndroidStudioProjects/Climate-History/app/src/main/res/layout/activity_global_temperature.xml" value="0.2" />
         <entry key="..\:/Users/azn-l/AndroidStudioProjects/Climate-History/app/src/main/res/layout/activity_ice_sheets.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/azn-l/AndroidStudioProjects/Climate-History/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/azn-l/AndroidStudioProjects/Climate-History/app/src/main/res/layout/activity_ocean_heat_content.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/azn-l/AndroidStudioProjects/Climate-History/app/src/main/res/layout/activity_sea_level.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/azn-l/AndroidStudioProjects/climate_history/app/src/main/res/layout/activity_arctic_sea_ice_minimum.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/azn-l/AndroidStudioProjects/climate_history/app/src/main/res/layout/activity_carbon_dioxide.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/azn-l/AndroidStudioProjects/climate_history/app/src/main/res/layout/activity_global_temperature.xml" value="0.25416666666666665" />
@@ -15,6 +23,24 @@
         <entry key="..\:/Users/azn-l/AndroidStudioProjects/climate_history/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/azn-l/AndroidStudioProjects/climate_history/app/src/main/res/layout/activity_ocean_heat_content.xml" value="0.264" />
         <entry key="..\:/Users/azn-l/AndroidStudioProjects/climate_history/app/src/main/res/layout/activity_sea_level.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/bhali/AndroidStudioProjects/Project/Climate-History/app/src/main/res/layout-land/activity_carbon_dioxide.xml" value="0.9515625" />
+        <entry key="..\:/Users/bhali/AndroidStudioProjects/Project/Climate-History/app/src/main/res/layout-land/activity_global_temperature.xml" value="0.9140625" />
+        <entry key="..\:/Users/bhali/AndroidStudioProjects/Project/Climate-History/app/src/main/res/layout/activity_arctic_sea_ice_minimum.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/bhali/AndroidStudioProjects/Project/Climate-History/app/src/main/res/layout/activity_carbon_dioxide.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/bhali/AndroidStudioProjects/Project/Climate-History/app/src/main/res/layout/activity_global_temperature.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/bhali/AndroidStudioProjects/Project/Climate-History/app/src/main/res/layout/activity_ice_sheets.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/bhali/AndroidStudioProjects/Project/Climate-History/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/bhali/AndroidStudioProjects/Project/Climate-History/app/src/main/res/layout/activity_sea_level.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/bhali/AndroidStudioProjects/Project/Climate-History/app/src/main/res/layout/fragment_arctic_sea_ice_minimum.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/bhali/AndroidStudioProjects/Project/Climate-History/app/src/main/res/layout/fragment_carbon_dioxide.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/bhali/AndroidStudioProjects/Project/Climate-History/app/src/main/res/layout/fragment_global_temperature.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/bhali/AndroidStudioProjects/Project/Climate-History/app/src/main/res/layout/fragment_ice_sheets.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/bhali/AndroidStudioProjects/Project/Climate-History/app/src/main/res/layout/fragment_main.xml" value="0.33" />
+        <entry key="..\:/Users/bhali/AndroidStudioProjects/Project/Climate-History/app/src/main/res/layout/fragment_ocean_heat_content.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/bhali/AndroidStudioProjects/Project/Climate-History/app/src/main/res/layout/fragment_sea_level.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/bhali/AndroidStudioProjects/Project/Climate-History/app/src/main/res/layout/nav_header.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/bhali/AndroidStudioProjects/Project/Climate-History/app/src/main/res/layout/toolbar_main.xml" value="0.3307291666666667" />
+        <entry key="..\:/Users/bhali/AndroidStudioProjects/Project/Climate-History/app/src/main/res/menu/menu_nav.xml" value="0.5541666666666667" />
       </map>
     </option>
   </component>
