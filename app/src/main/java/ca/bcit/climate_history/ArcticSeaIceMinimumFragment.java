@@ -39,8 +39,6 @@ public class ArcticSeaIceMinimumFragment extends Fragment {
         ArrayList<String> years = new ArrayList<>();
         ArrayList<Double> extent = new ArrayList<>();
         ArrayList<Double> area = new ArrayList<>();
-        //TODO: This is just the relative ranking.. should we leave out/include in separate graph?
-        ArrayList<Double> rank = new ArrayList<>();
 
         InputStream is = null;
         try {
@@ -55,7 +53,6 @@ public class ArcticSeaIceMinimumFragment extends Fragment {
             years.add(nums[0]);
             extent.add(Double.parseDouble(nums[1]));
             area.add(Double.parseDouble(nums[2]));
-            rank.add(Double.parseDouble(nums[3]));
         }
         for (int i = 0; i < years.size(); i++) {
             data.add(new ArcticSeaIceMinimumFragment.CustomDataEntry(years.get(i), extent.get(i), area.get(i)));
