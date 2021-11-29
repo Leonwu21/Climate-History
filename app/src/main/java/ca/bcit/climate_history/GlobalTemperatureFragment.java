@@ -59,7 +59,7 @@ public class GlobalTemperatureFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         View rootView = inflater.inflate(R.layout.fragment_global_temperature, container, false);
-        AnyChartView anyChartView = (AnyChartView) rootView.findViewById(R.id.gt_graph);
+        AnyChartView anyChartView = (AnyChartView) rootView.findViewById(R.id.globalTemperature_graph);
 
         Cartesian cartesian = AnyChart.line();
         cartesian.animation(true);
@@ -70,8 +70,9 @@ public class GlobalTemperatureFragment extends Fragment {
                 .yStroke((Stroke) null, null, null, (String) null, (String) null);
 
         cartesian.tooltip().positionMode(TooltipPositionMode.POINT);
-        cartesian.title("Land-Ocean Temperature Index (C)");
-        cartesian.yAxis(0).title("Temperature Anomaly (C)");
+        cartesian.title("Land-Ocean Temperature Index (\u2103)");
+        cartesian.yAxis(0).title("Temperature Anomaly (\u2103)");
+        cartesian.xAxis(0).title("Year");
         cartesian.xAxis(0).labels().padding(5d, 5d, 5d, 5d);
 
         List<DataEntry> seriesData = new ArrayList<>();

@@ -74,7 +74,7 @@ public class OceanHeatContentFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         View rootView = inflater.inflate(R.layout.fragment_ocean_heat_content, container, false);
-        AnyChartView anyChartView = (AnyChartView) rootView.findViewById(R.id.ohc_graph);
+        AnyChartView anyChartView = (AnyChartView) rootView.findViewById(R.id.oceanHeatContent_graph);
 
         Cartesian cartesian = AnyChart.line();
         cartesian.animation(true);
@@ -86,7 +86,8 @@ public class OceanHeatContentFragment extends Fragment {
 
         cartesian.tooltip().positionMode(TooltipPositionMode.POINT);
         cartesian.title("Ocean Heat Content Changes");
-        cartesian.yAxis(0).title("zettajoules");
+        cartesian.yAxis(0).title("Zettajoules");
+        cartesian.xAxis(0).title("Year");
         cartesian.xAxis(0).labels().padding(5d, 5d, 5d, 5d);
 
         List<DataEntry> seriesData = new ArrayList<>();

@@ -68,7 +68,7 @@ public class ArcticSeaIceMinimumFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         View rootView = inflater.inflate(R.layout.fragment_arctic_sea_ice_minimum, container, false);
-        AnyChartView anyChartView = (AnyChartView) rootView.findViewById(R.id.asim_graph);
+        AnyChartView anyChartView = (AnyChartView) rootView.findViewById(R.id.arcticSeaIceMinimum_graph);
 
         Cartesian cartesian = AnyChart.line();
         cartesian.animation(true);
@@ -80,7 +80,8 @@ public class ArcticSeaIceMinimumFragment extends Fragment {
 
         cartesian.tooltip().positionMode(TooltipPositionMode.POINT);
         cartesian.title("Average September Minimum Extent/Area");
-        cartesian.yAxis(0).title("million square km");
+        cartesian.yAxis(0).title("Million Square km");
+        cartesian.yAxis(0).title("Year");
         cartesian.xAxis(0).labels().padding(5d, 5d, 5d, 5d);
 
         List<DataEntry> seriesData = new ArrayList<>();

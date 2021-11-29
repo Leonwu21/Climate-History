@@ -14,7 +14,7 @@
             android:title="@string/nav_globalTemperature" />
         <item
             android:id="@+id/nav_arcticSeaIce"
-            android:title="@string/nav_arcticSeaIce" />
+            android:title="@string/nav_arcticSeaIceMinimum" />
         <item
             android:id="@+id/nav_iceSheets"
             android:title="@string/nav_iceSheets" />

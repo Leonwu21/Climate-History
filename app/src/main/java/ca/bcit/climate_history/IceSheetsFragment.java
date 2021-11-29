@@ -73,7 +73,7 @@ public class IceSheetsFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         View rootView = inflater.inflate(R.layout.fragment_ice_sheets, container, false);
-        AnyChartView anyChartView = (AnyChartView) rootView.findViewById(R.id.is_graph);
+        AnyChartView anyChartView = (AnyChartView) rootView.findViewById(R.id.iceSheets_graph);
 
         Cartesian cartesian = AnyChart.line();
         cartesian.animation(true);
@@ -85,7 +85,8 @@ public class IceSheetsFragment extends Fragment {
 
         cartesian.tooltip().positionMode(TooltipPositionMode.POINT);
         cartesian.title("Antarctica/Greenland Mass Variation");
-        cartesian.yAxis(0).title("Mass (gigatonnes)");
+        cartesian.yAxis(0).title("Mass (Gigatonnes)");
+        cartesian.xAxis(0).title("Year");
         cartesian.xAxis(0).labels().padding(5d, 5d, 5d, 5d);
 
         List<DataEntry> seriesData = new ArrayList<>();

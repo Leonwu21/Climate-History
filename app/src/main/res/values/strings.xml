@@ -2,7 +2,7 @@
     <string name="appName">Climate History</string>
     <string name="carbonDioxide">Carbon Dioxide</string>
     <string name="globalTemperature">Global Temperature</string>
-    <string name="arcticSeaIce">Arctic Sea Ice Minimum</string>
+    <string name="arcticSeaIceMinimum">Arctic Sea Ice Minimum</string>
     <string name="iceSheets">Ice Sheets</string>
     <string name="seaLevel">Sea Level</string>
     <string name="oceanHeatContent">Ocean Heat Content</string>
@@ -12,15 +12,35 @@
     <string name="main_blurb">Earth\'s climate has changed throughout history. Just in the last 650,000 years there have been seven cycles of glacial advance and retreat, with the abrupt end of the last ice age about 11,700 years ago marking the beginning of the modern climate era — and of human civilization. Most of these climate changes are attributed to very small variations in Earth’s orbit that change the amount of solar energy our planet receives.</string>
     <string name="main_summary">Direct observations made on and above Earth’s surface show the planet’s climate is significantly changing. Human activities are the primary driver of those changes.</string>
 
-    <!-- co2 items -->
-    <string name="co2_blurb">Since the beginning of the industrial era (1850), human activities have raised atmospheric concentrations of CO2 by nearly 49%. This is more than what had happened naturally over a 20,000 year period (from the Last Glacial Maximum to 1850, from 185 ppm to 280 ppm).</string>
-    <string name="co2_summary">Human activities have profoundly increased carbon dioxide (a heat-trapping gas) levels in Earth’s atmosphere.</string>
+    <!-- carbon dioxide items -->
+    <string name="carbonDioxide_blurb">Since the beginning of the industrial era (1850), human activities have raised atmospheric concentrations of CO2 by nearly 49%. This is more than what had happened naturally over a 20,000 year period (from the Last Glacial Maximum to 1850, from 185 ppm to 280 ppm).</string>
+    <string name="carbonDioxide_summary">Human activities have profoundly increased carbon dioxide (a heat-trapping gas) levels in Earth’s atmosphere.</string>
+
+    <!-- global temperature items -->
+    <string name="globalTemperature_blurb">This graph illustrates the change in global surface temperature relative to 1951–1980 average temperatures. Nineteen of the hottest years have occurred since 2000, with the exception of 1998, which was helped by a very strong El Niño.</string>
+    <string name="globalTemperature_summary">Earth’s surface continues to significantly warm, with recent global temperatures being the hottest in the past 2,000-plus years.</string>
+
+    <!-- arctic sea ice minimum items -->
+    <string name="arcticSeaIceMinimum_blurb">Arctic sea ice reaches its minimum each September. September Arctic sea ice is now declining at a rate of 13% per decade, relative to the 1981 to 2010 average. This graph shows the average monthly Arctic sea ice extent each September since 1979, derived from satellite observations.</string>
+    <string name="arcticSeaIceMinimum_summary">Arctic sea ice extent has declined significantly in all months since satellite measurements began in 1979, with Septembers showing the largest declines. The last 15 Septembers show the lowest values.</string>
+
+    <!-- ice sheets items -->
+    <string name="iceSheets_blurb">Data from NASA\'s GRACE and GRACE Follow-On satellites show that the land ice sheets in both Antarctica (upper chart) and Greenland (lower chart) have been losing mass since 2002. The GRACE mission concluded science operations in June 2017.</string>
+    <string name="iceSheets_summary">The Greenland and Antarctic ice sheets are losing significant amounts of land-based ice as a result of human-caused global warming.</string>
+
+    <!-- sea level items -->
+    <string name="seaLevel_blurb">Sea level rise is caused primarily by two factors related to global warming: the added water from melting ice sheets and glaciers and the expansion of seawater as it warms. The graph tracks the change in sea level since 1993 as observed by satellites.</string>
+    <string name="seaLevel_summary">Global sea levels are rising as a result of human-caused global warming, with recent rates being unprecedented over the past 2,000-plus years.</string>
+
+    <!-- ocean heat content items -->
+    <string name="oceanHeatContent_blurb">Ninety percent of global warming is occurring in the ocean, causing the water’s internal heat to increase since modern record-keeping began in 1955, as shown in the upper chart. (The shaded blue region indicates the 95% margin of uncertainty.) This chart shows annual estimates for the first 2,000 meters of ocean depth.</string>
+    <string name="oceanHeatContent_summary">Ninety percent of global warming is occurring in the ocean, with the last decade and the year 2020 being the hottest.</string>
 
     <!-- menu items -->
     <string name="nav_main">Homepage</string>
     <string name="nav_carbonDioxide">Carbon Dioxide</string>
     <string name="nav_globalTemperature">Global Temperature</string>
-    <string name="nav_arcticSeaIce">Arctic Sea Ice Minimum</string>
+    <string name="nav_arcticSeaIceMinimum">Arctic Sea Ice Minimum</string>
     <string name="nav_iceSheets">Ice Sheets</string>
     <string name="nav_seaLevel">Sea Level</string>
     <string name="nav_oceanHeatContent">Ocean Heat Content</string>

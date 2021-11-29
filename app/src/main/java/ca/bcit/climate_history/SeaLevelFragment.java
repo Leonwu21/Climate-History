@@ -65,7 +65,7 @@ public class SeaLevelFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         View rootView = inflater.inflate(R.layout.fragment_sea_level, container, false);
-        AnyChartView anyChartView = (AnyChartView) rootView.findViewById(R.id.sl_graph);
+        AnyChartView anyChartView = (AnyChartView) rootView.findViewById(R.id.seaLevel_graph);
 
         Cartesian cartesian = AnyChart.line();
         cartesian.animation(true);
@@ -78,6 +78,7 @@ public class SeaLevelFragment extends Fragment {
         cartesian.tooltip().positionMode(TooltipPositionMode.POINT);
         cartesian.title("Global Mean Sea Level Variations");
         cartesian.yAxis(0).title("Sea Height Variation (mm)");
+        cartesian.xAxis(0).title("Year");
         cartesian.xAxis(0).labels().padding(5d, 5d, 5d, 5d);
 
         List<DataEntry> seriesData = new ArrayList<>();

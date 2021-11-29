@@ -66,7 +66,7 @@ public class CarbonDioxideFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         View rootView = inflater.inflate(R.layout.fragment_carbon_dioxide, container, false);
-        AnyChartView anyChartView = (AnyChartView) rootView.findViewById(R.id.co2_graph);
+        AnyChartView anyChartView = (AnyChartView) rootView.findViewById(R.id.carbonDioxide_graph);
 
         Cartesian cartesian = AnyChart.line();
         cartesian.animation(true);
@@ -77,7 +77,7 @@ public class CarbonDioxideFragment extends Fragment {
                 .yStroke((Stroke) null, null, null, (String) null, (String) null);
 
         cartesian.tooltip().positionMode(TooltipPositionMode.POINT);
-        cartesian.title("Graph of CO2 Levels");
+        cartesian.title("CO2 Levels");
         cartesian.yAxis(0).title("CO2 (Parts Per Million)");
         cartesian.xAxis(0).title("Year");
         cartesian.xAxis(0).labels().padding(5d, 5d, 5d, 5d);
