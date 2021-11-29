@@ -5,12 +5,16 @@
     <string name="arcticSeaIce">Arctic Sea Ice Minimum</string>
     <string name="iceSheets">Ice Sheets</string>
     <string name="seaLevel">Sea Level</string>
+    <string name="oceanHeatContent">Ocean Heat Content</string>
+    <string name="brief">In Brief:</string>
 
     <!-- main items -->
-    <string name="oceanHeatContent">Ocean Heat Content</string>
     <string name="main_blurb">Earth\'s climate has changed throughout history. Just in the last 650,000 years there have been seven cycles of glacial advance and retreat, with the abrupt end of the last ice age about 11,700 years ago marking the beginning of the modern climate era — and of human civilization. Most of these climate changes are attributed to very small variations in Earth’s orbit that change the amount of solar energy our planet receives.</string>
-    <string name="main_brief">In Brief:</string>
     <string name="main_summary">Direct observations made on and above Earth’s surface show the planet’s climate is significantly changing. Human activities are the primary driver of those changes.</string>
+
+    <!-- co2 items -->
+    <string name="co2_blurb">Since the beginning of the industrial era (1850), human activities have raised atmospheric concentrations of CO2 by nearly 49%. This is more than what had happened naturally over a 20,000 year period (from the Last Glacial Maximum to 1850, from 185 ppm to 280 ppm).</string>
+    <string name="co2_summary">Human activities have profoundly increased carbon dioxide (a heat-trapping gas) levels in Earth’s atmosphere.</string>
 
     <!-- menu items -->
     <string name="nav_main">Homepage</string>

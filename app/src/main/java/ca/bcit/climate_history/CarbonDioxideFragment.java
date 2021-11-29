@@ -77,8 +77,9 @@ public class CarbonDioxideFragment extends Fragment {
                 .yStroke((Stroke) null, null, null, (String) null, (String) null);
 
         cartesian.tooltip().positionMode(TooltipPositionMode.POINT);
-        cartesian.title("Monthly CO2 measurements");
-        cartesian.yAxis(0).title("CO2 (parts per million)");
+        cartesian.title("Graph of CO2 Levels");
+        cartesian.yAxis(0).title("CO2 (Parts Per Million)");
+        cartesian.xAxis(0).title("Year");
         cartesian.xAxis(0).labels().padding(5d, 5d, 5d, 5d);
 
         List<DataEntry> seriesData = new ArrayList<>();
