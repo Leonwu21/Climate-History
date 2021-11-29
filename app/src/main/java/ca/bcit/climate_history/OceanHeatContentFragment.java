@@ -37,12 +37,8 @@ public class OceanHeatContentFragment extends Fragment {
      */
     public void readFile(String filename, List<DataEntry> data) throws IOException {
         ArrayList<String> years = new ArrayList<>();
-        ArrayList<Double> wo = new ArrayList<>();
-        ArrayList<Double> wose = new ArrayList<>();
         ArrayList<Double> nh = new ArrayList<>();
-        ArrayList<Double> nhse = new ArrayList<>();
         ArrayList<Double> sh = new ArrayList<>();
-        ArrayList<Double> shse = new ArrayList<>();
 
         InputStream is = null;
         try {
@@ -55,16 +51,11 @@ public class OceanHeatContentFragment extends Fragment {
         while ((line = reader.readLine()) != null) {
             String [] nums = line.split(";");
             years.add(nums[0]);
-            wo.add(Double.parseDouble(nums[1]));
-            wose.add(Double.parseDouble(nums[2]));
             nh.add(Double.parseDouble(nums[3]));
-            nhse.add(Double.parseDouble(nums[4]));
             sh.add(Double.parseDouble(nums[5]));
-            shse.add(Double.parseDouble(nums[6]));
         }
         for (int i = 0; i < years.size(); i++) {
-            data.add(new OceanHeatContentFragment.CustomDataEntry(years.get(i), wo.get(i), wose.get(i),
-                    nh.get(i), nhse.get(i), sh.get(i), shse.get(i)));
+            data.add(new OceanHeatContentFragment.CustomDataEntry(years.get(i), nh.get(i), sh.get(i)));
         }
     }
 
@@ -101,14 +92,9 @@ public class OceanHeatContentFragment extends Fragment {
         set.data(seriesData);
         Mapping series1Mapping = set.mapAs("{ x: 'x', value: 'value' }");
         Mapping series2Mapping = set.mapAs("{ x: 'x', value: 'value2' }");
-        Mapping series3Mapping = set.mapAs("{ x: 'x', value: 'value3' }");
-        Mapping series4Mapping = set.mapAs("{ x: 'x', value: 'value4' }");
-        Mapping series5Mapping = set.mapAs("{ x: 'x', value: 'value5' }");
-        Mapping series6Mapping = set.mapAs("{ x: 'x', value: 'value6' }");
-        Mapping series7Mapping = set.mapAs("{ x: 'x', value: 'value7' }");
 
         Line series1 = cartesian.line(series1Mapping);
-        series1.name("Year");
+        series1.name("Northern Hemisphere");
         series1.hovered().markers().enabled(true);
         series1.hovered().markers()
                 .type(MarkerType.CIRCLE)
@@ -120,72 +106,12 @@ public class OceanHeatContentFragment extends Fragment {
                 .offsetY(5d);
 
         Line series2 = cartesian.line(series2Mapping);
-        series2.name("WO");
+        series2.name("Southern Hemisphere");
         series2.hovered().markers().enabled(true);
         series2.hovered().markers()
                 .type(MarkerType.CIRCLE)
                 .size(4d);
         series2.tooltip()
-                .position("right")
-                .anchor(Anchor.LEFT_CENTER)
-                .offsetX(5d)
-                .offsetY(5d);
-
-        Line series3 = cartesian.line(series3Mapping);
-        series3.name("WOse");
-        series3.hovered().markers().enabled(true);
-        series3.hovered().markers()
-                .type(MarkerType.CIRCLE)
-                .size(4d);
-        series3.tooltip()
-                .position("right")
-                .anchor(Anchor.LEFT_CENTER)
-                .offsetX(5d)
-                .offsetY(5d);
-
-        Line series4 = cartesian.line(series4Mapping);
-        series4.name("NH");
-        series4.hovered().markers().enabled(true);
-        series4.hovered().markers()
-                .type(MarkerType.CIRCLE)
-                .size(4d);
-        series4.tooltip()
-                .position("right")
-                .anchor(Anchor.LEFT_CENTER)
-                .offsetX(5d)
-                .offsetY(5d);
-
-        Line series5 = cartesian.line(series5Mapping);
-        series5.name("NHse");
-        series5.hovered().markers().enabled(true);
-        series5.hovered().markers()
-                .type(MarkerType.CIRCLE)
-                .size(4d);
-        series5.tooltip()
-                .position("right")
-                .anchor(Anchor.LEFT_CENTER)
-                .offsetX(5d)
-                .offsetY(5d);
-
-        Line series6 = cartesian.line(series6Mapping);
-        series6.name("SH");
-        series6.hovered().markers().enabled(true);
-        series6.hovered().markers()
-                .type(MarkerType.CIRCLE)
-                .size(4d);
-        series6.tooltip()
-                .position("right")
-                .anchor(Anchor.LEFT_CENTER)
-                .offsetX(5d)
-                .offsetY(5d);
-
-        Line series7 = cartesian.line(series7Mapping);
-        series7.name("SHse");
-        series7.hovered().markers().enabled(true);
-        series7.hovered().markers()
-                .type(MarkerType.CIRCLE)
-                .size(4d);
-        series7.tooltip()
                 .position("right")
                 .anchor(Anchor.LEFT_CENTER)
                 .offsetX(5d)
@@ -203,14 +129,9 @@ public class OceanHeatContentFragment extends Fragment {
     // Custom DataEntry object for graph
     private static class CustomDataEntry extends ValueDataEntry {
 
-        CustomDataEntry(String x, Number value, Number value2, Number value3, Number value4,
-                        Number value5, Number value6) {
+        CustomDataEntry(String x, Number value, Number value2) {
             super(x, value);
             setValue("value2", value2);
-            setValue("value3", value3);
-            setValue("value4", value4);
-            setValue("value5", value5);
-            setValue("value6", value6);
         }
     }
 }

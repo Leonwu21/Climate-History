@@ -81,7 +81,7 @@ public class ArcticSeaIceMinimumFragment extends Fragment {
         cartesian.tooltip().positionMode(TooltipPositionMode.POINT);
         cartesian.title("Average September Minimum Extent/Area");
         cartesian.yAxis(0).title("Million Square km");
-        cartesian.yAxis(0).title("Year");
+        cartesian.xAxis(0).title("Year");
         cartesian.xAxis(0).labels().padding(5d, 5d, 5d, 5d);
 
         List<DataEntry> seriesData = new ArrayList<>();

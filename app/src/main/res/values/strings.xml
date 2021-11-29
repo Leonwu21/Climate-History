@@ -25,7 +25,7 @@
     <string name="arcticSeaIceMinimum_summary">Arctic sea ice extent has declined significantly in all months since satellite measurements began in 1979, with Septembers showing the largest declines. The last 15 Septembers show the lowest values.</string>
 
     <!-- ice sheets items -->
-    <string name="iceSheets_blurb">Data from NASA\'s GRACE and GRACE Follow-On satellites show that the land ice sheets in both Antarctica (upper chart) and Greenland (lower chart) have been losing mass since 2002. The GRACE mission concluded science operations in June 2017.</string>
+    <string name="iceSheets_blurb">Data from NASA\'s GRACE and GRACE Follow-On satellites show that the land ice sheets in both Antarctica and Greenland have been losing mass since 2002. The GRACE mission concluded science operations in June 2017.</string>
     <string name="iceSheets_summary">The Greenland and Antarctic ice sheets are losing significant amounts of land-based ice as a result of human-caused global warming.</string>
 
     <!-- sea level items -->
@@ -33,7 +33,7 @@
     <string name="seaLevel_summary">Global sea levels are rising as a result of human-caused global warming, with recent rates being unprecedented over the past 2,000-plus years.</string>
 
     <!-- ocean heat content items -->
-    <string name="oceanHeatContent_blurb">Ninety percent of global warming is occurring in the ocean, causing the water’s internal heat to increase since modern record-keeping began in 1955, as shown in the upper chart. (The shaded blue region indicates the 95% margin of uncertainty.) This chart shows annual estimates for the first 2,000 meters of ocean depth.</string>
+    <string name="oceanHeatContent_blurb">Ninety percent of global warming is occurring in the ocean, causing the water’s internal heat to increase since modern record-keeping began in 1955, as shown in the graph above. The graph shows annual estimates for the first 2,000 meters of ocean depth.</string>
     <string name="oceanHeatContent_summary">Ninety percent of global warming is occurring in the ocean, with the last decade and the year 2020 being the hottest.</string>
 
     <!-- menu items -->
