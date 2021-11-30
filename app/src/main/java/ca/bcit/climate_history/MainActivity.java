@@ -15,11 +15,28 @@ import android.view.View;
 
 import com.google.android.material.navigation.NavigationView;
 
+/**
+ * Main activity page.
+ * @author Benedict Halim
+ * @author Leon Wu
+ * @version 1.0
+ */
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
+    /**
+     * The layout drawer.
+     */
     DrawerLayout drawerlayout;
+
+    /**
+     * Toggles the action bar.
+     */
     ActionBarDrawerToggle actionBarDrawerToggle;
 
+    /**
+     * Creates the view. Also sets up the hamburger menu.
+     * @param savedInstanceState The saved state of the instance.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,10 +62,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         ft.add(R.id.content_frame, fragment);
         ft.commit();
-
-
     }
 
+    /**
+     * Sets what happens when a certain item is selected on the menu bar.
+     * @param item The menu item to be selected.
+     * @return True if menu item selected is valid. Otherwise, false.
+     */
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         int id = item.getItemId();
@@ -91,6 +111,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         return true;
     }
 
+    /**
+     * When the back button is pressed, close the hamburger menu if it's open.
+     */
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -101,6 +124,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
     }
 
+    /**
+     * Go to the option that's selected.
+     * @param item The item to be selected.
+     * @return True if the item is selected. Otherwise, false.
+     */
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (actionBarDrawerToggle.onOptionsItemSelected(item))

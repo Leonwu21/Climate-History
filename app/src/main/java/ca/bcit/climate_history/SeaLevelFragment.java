@@ -27,13 +27,19 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Class for fragment to display the sea level.
+ * @author Benedict Halim
+ * @author Leon Wu
+ * @version 1.0
+ */
 public class SeaLevelFragment extends Fragment {
 
     /**
-     * Reads in file, parses the information, and stores it in a list of DataEntry objects
-     * @param filename name of text file to read
-     * @param data list of DataEntry objects
-     * @throws IOException if file not found
+     * Reads in file, parses the information, and stores it in a list of DataEntry objects.
+     * @param filename The name of text file to read.
+     * @param data The list of DataEntry objects.
+     * @throws IOException Throw exception if the file is not found.
      */
     public void readFile(String filename, List<DataEntry> data) throws IOException {
         ArrayList<String> years = new ArrayList<>();
@@ -41,24 +47,38 @@ public class SeaLevelFragment extends Fragment {
         ArrayList<Double> smoothed = new ArrayList<>();
 
         InputStream is = null;
+
+        //Try to open files. If one of the files not found, throw exception.
         try {
             is = getContext().getAssets().open(filename);
         } catch (IOException e) {
             e.printStackTrace();
         }
+
         BufferedReader reader = new BufferedReader(new InputStreamReader(is));
         String line;
+
+        //Read through the file and feed into arrays based on ; delimiter.
         while ((line = reader.readLine()) != null) {
             String [] nums = line.split(";");
             years.add(nums[0]);
             raw.add(Double.parseDouble(nums[1]));
             smoothed.add(Double.parseDouble(nums[2]));
         }
+
+        //Iterate through the arrays to feed into graph.
         for (int i = 0; i < years.size(); i++) {
             data.add(new SeaLevelFragment.CustomDataEntry(years.get(i), raw.get(i), smoothed.get(i)));
         }
     }
 
+    /**
+     * Inflates the view with the fragment. Also creates the graph.
+     * @param inflater The layout to inflate with.
+     * @param container The container.
+     * @param savedInstanceState The saved state of the instance.
+     * @return The view.
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -67,6 +87,7 @@ public class SeaLevelFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_sea_level, container, false);
         AnyChartView anyChartView = (AnyChartView) rootView.findViewById(R.id.seaLevel_graph);
 
+        // Set up the lines
         Cartesian cartesian = AnyChart.line();
         cartesian.animation(true);
         cartesian.padding(10d, 20d, 5d, 20d);
@@ -75,12 +96,14 @@ public class SeaLevelFragment extends Fragment {
                 .yLabel(true)
                 .yStroke((Stroke) null, null, null, (String) null, (String) null);
 
+        // Set up the x and y-axis
         cartesian.tooltip().positionMode(TooltipPositionMode.POINT);
         cartesian.title("Global Mean Sea Level Variations");
         cartesian.yAxis(0).title("Sea Height Variation (mm)");
         cartesian.xAxis(0).title("Year");
         cartesian.xAxis(0).labels().padding(5d, 5d, 5d, 5d);
 
+        // Read from data
         List<DataEntry> seriesData = new ArrayList<>();
         try {
             readFile("SeaLevel.txt", seriesData);
@@ -88,11 +111,13 @@ public class SeaLevelFragment extends Fragment {
             e.printStackTrace();
         }
 
+        // Maps the series of data
         Set set = Set.instantiate();
         set.data(seriesData);
         Mapping series1Mapping = set.mapAs("{ x: 'x', value: 'value' }");
         Mapping series2Mapping = set.mapAs("{ x: 'x', value: 'value2' }");
 
+        // Plot data for raw data of sea height variation
         Line series1 = cartesian.line(series1Mapping);
         series1.name("Raw data");
         series1.hovered().markers().enabled(true);
@@ -105,6 +130,7 @@ public class SeaLevelFragment extends Fragment {
                 .offsetX(5d)
                 .offsetY(5d);
 
+        // Plot data for smoothed data of sea height variation
         Line series2 = cartesian.line(series2Mapping);
         series2.name("Smoothed");
         series2.stroke("2 red");
@@ -127,9 +153,17 @@ public class SeaLevelFragment extends Fragment {
         return rootView;
     }
 
-    // Custom DataEntry object for graph
+    /**
+     * CustomDataEntry object to be used for the graph.
+     */
     private static class CustomDataEntry extends ValueDataEntry {
 
+        /**
+         * Helper method to enter the data into the graph.
+         * @param x The message to be fed into the graph.
+         * @param value The first value to be fed into the graph.
+         * @param value2 The second value to be fed into the graph.
+         */
         CustomDataEntry(String x, Number value, Number value2) {
             super(x, value);
             setValue("value2", value2);
